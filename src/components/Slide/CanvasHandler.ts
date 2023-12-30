@@ -125,6 +125,21 @@ export class CanvasHandler {
     this.canvas?.add(createdObject as fabric.Rect);
   }
 
+  addConfigArea() {
+    const createdObject = new fabric.Rect({
+      left: 100,
+      top: 100,
+      fill: "rgba(0,0,0,0)",
+      stroke: "black",
+      strokeWidth: 0.5,
+      strokeDashArray: [0.1],
+      width: 20,
+      height: 20,
+    });
+
+    this.canvas?.add(createdObject);
+  }
+
   swapActiveObjects() {
     const activeObjects = this.canvas?.getActiveObjects();
 

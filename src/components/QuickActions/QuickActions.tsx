@@ -1,8 +1,10 @@
 import React, { FC, MutableRefObject } from "react";
+
 import { BiRectangle } from "react-icons/bi";
 import { FaArrowRight } from "react-icons/fa";
 import { BiCircle } from "react-icons/bi";
 import { BsFonts } from "react-icons/bs";
+import { LuBoxSelect } from "react-icons/lu";
 
 import styles from "./QuickActions.module.scss";
 import { CanvasSlideInstance } from "../Slide/CanvasSlide";
@@ -42,6 +44,13 @@ const QuickActions: FC<QuickActionsToolbarProps> = ({ canvasRef }) => {
         >
           <BsFonts />
         </li>
+        {/* <li
+          onClick={() => {
+            canvasRef.current.handler?.addConfigArea();
+          }}
+        >
+          <LuBoxSelect />
+        </li> */}
       </ul>
     </div>
   );
